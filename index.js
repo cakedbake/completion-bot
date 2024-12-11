@@ -34,7 +34,8 @@ client.on("messageCreate", async (msg) => {
 			"model": "codestral-latest",
 			"prompt": prompt[0],
 			"suffix": prompt[1],
-			"maxTokens": 8000,
+			"maxTokens": 32768 - 4000,
+			// at 82 T/s this will take at most 5.8 minutes to generate a response
 			"temperature": 0
 		});
 
