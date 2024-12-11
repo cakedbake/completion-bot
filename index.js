@@ -34,7 +34,8 @@ client.on("messageCreate", async (msg) => {
 			"model": "codestral-latest",
 			"prompt": prompt[0],
 			"suffix": prompt[1],
-			"maxTokens": 8000
+			"maxTokens": 8000,
+			"temperature": 0
 		});
 
 		clearInterval(interval);
