@@ -52,7 +52,7 @@ client.on("messageCreate", async (msg) => {
 	} catch (error) {
 		clearInterval(interval);
 		try {
-			return await msg.reply("Error: " + error.message);
+			return await msg.reply(error.stack);
 		} catch {}
 	}
 });
