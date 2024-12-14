@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
-import discord from 'discord.js'
-import dotenv from 'dotenv'
-import { Mistral } from '@mistralai/mistralai'
+const discord = await import('discord.js')
+const dotenv = await import('dotenv')
+const { Mistral } = await import('@mistralai/mistralai')
 
 dotenv.config()
 
